@@ -17,7 +17,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-r from-header to-primary text-white">
+    <footer className="text-white" style={{ background: 'linear-gradient(to right, hsl(var(--header-bg)) 0%, hsl(var(--header-bg)) 60%, hsl(var(--primary)) 100%)' }}>
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
