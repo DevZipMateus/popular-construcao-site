@@ -20,6 +20,9 @@ import midia7 from "@/assets/gallery/midia_7.jpg";
 import midia8 from "@/assets/gallery/midia_8.jpg";
 import midia9 from "@/assets/gallery/midia_9.jpg";
 import midia10 from "@/assets/gallery/midia_10.jpg";
+import midia11 from "@/assets/gallery/midia_11.jpg";
+import midia12 from "@/assets/gallery/midia_12.jpg";
+import midia13 from "@/assets/gallery/midia_13.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -35,6 +38,9 @@ const Gallery = () => {
     midia8,
     midia9,
     midia10,
+    midia11,
+    midia12,
+    midia13,
   ];
 
   const autoplayPlugin = Autoplay({
