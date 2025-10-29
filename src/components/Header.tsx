@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-header border-b border-header">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3">
@@ -31,21 +31,21 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
-            <Button variant="ghost" onClick={() => scrollToSection("hero")} className="text-foreground hover:text-primary">
+            <Button variant="ghost" onClick={() => scrollToSection("hero")} className="text-white hover:text-white hover:bg-white/20">
               Início
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection("sobre")} className="text-foreground hover:text-primary">
+            <Button variant="ghost" onClick={() => scrollToSection("sobre")} className="text-white hover:text-white hover:bg-white/20">
               Sobre
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection("servicos")} className="text-foreground hover:text-primary">
+            <Button variant="ghost" onClick={() => scrollToSection("servicos")} className="text-white hover:text-white hover:bg-white/20">
               Serviços
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection("contato")} className="text-foreground hover:text-primary">
+            <Button variant="ghost" onClick={() => scrollToSection("contato")} className="text-white hover:text-white hover:bg-white/20">
               Contato
             </Button>
             <Button 
               onClick={() => window.open("https://wa.me/5513933583248", "_blank")}
-              className="ml-4 bg-primary text-primary-foreground hover:bg-primary/90"
+              className="ml-4 bg-white text-header hover:bg-white/90"
             >
               Fale Conosco
             </Button>
@@ -55,7 +55,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden text-white hover:text-white hover:bg-white/20"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -65,21 +65,21 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden py-4 space-y-2">
-            <Button variant="ghost" onClick={() => scrollToSection("hero")} className="w-full justify-start text-foreground hover:text-primary">
+            <Button variant="ghost" onClick={() => scrollToSection("hero")} className="w-full justify-start text-white hover:text-white hover:bg-white/20">
               Início
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection("sobre")} className="w-full justify-start text-foreground hover:text-primary">
+            <Button variant="ghost" onClick={() => scrollToSection("sobre")} className="w-full justify-start text-white hover:text-white hover:bg-white/20">
               Sobre
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection("servicos")} className="w-full justify-start text-foreground hover:text-primary">
+            <Button variant="ghost" onClick={() => scrollToSection("servicos")} className="w-full justify-start text-white hover:text-white hover:bg-white/20">
               Serviços
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection("contato")} className="w-full justify-start text-foreground hover:text-primary">
+            <Button variant="ghost" onClick={() => scrollToSection("contato")} className="w-full justify-start text-white hover:text-white hover:bg-white/20">
               Contato
             </Button>
             <Button 
               onClick={() => window.open("https://wa.me/5513933583248", "_blank")}
-              className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+              className="w-full bg-white text-header hover:bg-white/90"
             >
               Fale Conosco
             </Button>
