@@ -18,12 +18,12 @@ const Footer = () => {
 
   return (
     <footer className="text-white" style={{ background: 'linear-gradient(to right, hsl(var(--header-bg)) 0%, hsl(var(--header-bg)) 60%, hsl(var(--primary)) 100%)' }}>
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Logo e Descrição */}
-          <div className="space-y-4">
-            <img src={logo} alt="A Popular Materiais para Construção" className="h-16 w-auto" />
-            <p className="text-white/80 text-sm">
+          <div className="space-y-3 sm:space-y-4">
+            <img src={logo} alt="A Popular Materiais para Construção" className="h-12 sm:h-14 md:h-16 w-auto" />
+            <p className="text-white/80 text-sm sm:text-base">
               Materiais de construção de qualidade com preços acessíveis. Atendimento de confiança desde 2018.
             </p>
           </div>
@@ -93,8 +93,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-white/20 mt-8 pt-8 text-center">
-          <p className="text-white/80 text-sm">
+        <div className="border-t border-white/20 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
+          <p className="text-white/80 text-xs sm:text-sm">
             © {new Date().getFullYear()} A Popular Materiais para Construção. Todos os direitos reservados.
           </p>
           <p className="text-white/70 text-xs mt-2">

@@ -3,15 +3,15 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
   return (
-    <section id="sobre" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto space-y-16">
+    <section id="sobre" className="py-12 sm:py-16 md:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto space-y-12 sm:space-y-16">
           {/* História */}
-          <div className="text-center space-y-6 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+          <div className="text-center space-y-4 sm:space-y-6 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground px-4 sm:px-0">
               Nossa história
             </h2>
-            <div className="max-w-4xl mx-auto space-y-4 text-lg text-muted-foreground">
+            <div className="max-w-4xl mx-auto space-y-3 sm:space-y-4 text-base sm:text-lg text-muted-foreground px-4 sm:px-0">
               <p>
                 Fundada em 2018, na cidade de Guarujá, São Paulo, a A Popular Materiais para Construção nasceu da iniciativa do Engenheiro Civil Daniel do Nascimento Oliveira, com o apoio e dedicação de sua esposa, Rafaely Câmara Oliveira.
               </p>
@@ -25,14 +25,14 @@ const About = () => {
           </div>
 
           {/* Valores, Missão e Visão */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-0">
             <Card className="border-2 hover:border-primary transition-all hover:shadow-lg">
-              <CardContent className="p-8 text-center space-y-4">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                  <Eye className="h-8 w-8 text-primary" />
+              <CardContent className="p-6 sm:p-8 text-center space-y-4">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                  <Eye className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground">Visão</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground">Visão</h3>
+                <p className="text-sm sm:text-base text-muted-foreground">
                   Ser reconhecida como a loja de materiais de construção mais confiável e acessível da região, referência em bom atendimento, variedade e compromisso com o cliente.
                 </p>
               </CardContent>

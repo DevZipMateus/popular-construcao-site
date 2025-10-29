@@ -4,19 +4,19 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Contact = () => {
   return (
-    <section id="contato" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto space-y-12">
-          <div className="text-center space-y-4 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+    <section id="contato" className="py-12 sm:py-16 md:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto space-y-8 sm:space-y-12">
+          <div className="text-center space-y-3 sm:space-y-4 animate-fade-in px-4 sm:px-0">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
               Entre em contato
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
               Estamos prontos para atender você e realizar seu projeto
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {/* Informações de Contato */}
             <div className="space-y-6">
               <Card className="border-2 hover:border-primary transition-all">
@@ -126,11 +126,11 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="text-center pt-8">
+          <div className="text-center pt-6 sm:pt-8 px-4 sm:px-0">
             <Button 
               size="lg"
               onClick={() => window.open("https://wa.me/5513933583248", "_blank")}
-              className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all text-lg px-12 py-6"
+              className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all text-base sm:text-lg px-8 sm:px-12 py-5 sm:py-6"
             >
               Faça seu Orçamento pelo WhatsApp
             </Button>
