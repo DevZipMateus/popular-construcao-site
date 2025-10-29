@@ -112,7 +112,7 @@ const Contact = () => {
               <Card className="border-2 overflow-hidden h-full">
                 <CardContent className="p-0 h-full min-h-[500px]">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.8!2d-46.25!3d-23.99!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU5JzI0LjQiUyA0NsKwMTUnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Av.+Antônio+Miguel+Dos+Santos+475,+Santa+Rosa,+Guarujá,+SP"
                     width="100%"
                     height="100%"
                     style={{ border: 0, minHeight: "500px" }}
