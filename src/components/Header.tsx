@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-header border-b border-header">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/20" style={{ background: 'linear-gradient(to right, hsl(var(--header-bg)) 0%, hsl(var(--header-bg)) 60%, hsl(var(--primary)) 100%)' }}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3">
