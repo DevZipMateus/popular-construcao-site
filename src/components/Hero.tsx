@@ -1,10 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock } from "lucide-react";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   return (
-    <section id="hero" className="pt-20 min-h-screen flex items-center bg-gradient-to-br from-primary via-primary/95 to-primary/90">
-      <div className="container mx-auto px-4 py-20">
+    <section id="hero" className="pt-20 min-h-screen flex items-center relative overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url(${heroBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/85 z-10" />
+      
+      {/* Content */}
+      <div className="container mx-auto px-4 py-20 relative z-20">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight animate-fade-in">
             A Popular Materiais para Construção
