@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import logo from "@/assets/logo.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -43,6 +45,9 @@ const Header = () => {
             <Button variant="ghost" onClick={() => scrollToSection("contato")} className="text-white hover:text-white hover:bg-white/20">
               Contato
             </Button>
+            <Button variant="ghost" onClick={() => navigate("/vitrine")} className="text-white hover:text-white hover:bg-white/20">
+              Vitrine
+            </Button>
             <Button 
               onClick={() => window.open("https://wa.me/5513933583248", "_blank")}
               className="ml-4 bg-white text-header hover:bg-white/90"
@@ -76,6 +81,9 @@ const Header = () => {
             </Button>
             <Button variant="ghost" onClick={() => scrollToSection("contato")} className="w-full justify-start text-white hover:text-white hover:bg-white/20">
               Contato
+            </Button>
+            <Button variant="ghost" onClick={() => navigate("/vitrine")} className="w-full justify-start text-white hover:text-white hover:bg-white/20">
+              Vitrine
             </Button>
             <Button 
               onClick={() => window.open("https://wa.me/5513933583248", "_blank")}
