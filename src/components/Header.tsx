@@ -1,14 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (id: string) => {
+    // Se não estamos na página inicial, navega primeiro
+    if (location.pathname !== "/") {
+      navigate("/");
+      // Aguarda navegação e então faz scroll
+      setTimeout(() => {
+        scrollToElement(id);
+      }, 100);
+    } else {
+      scrollToElement(id);
+    }
+    setIsMenuOpen(false);
+  };
+
+  const scrollToElement = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       const offset = 80;
@@ -20,8 +35,18 @@ const Header = () => {
         behavior: "smooth"
       });
     }
-    setIsMenuOpen(false);
   };
+
+  // Handle hash navigation on page load
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      setTimeout(() => {
+        scrollToElement(id);
+      }, 100);
+    }
+  }, [location]);
+
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/20" style={{ background: 'linear-gradient(to right, hsl(var(--header-bg)) 0%, hsl(var(--header-bg)) 60%, hsl(var(--primary)) 100%)' }}>
