@@ -2,9 +2,9 @@ import Header from "@/components/Header";
 
 const Vitrine = () => {
   return (
-    <div className="fixed inset-0 flex flex-col overflow-hidden">
+    <div className="min-h-screen overflow-hidden">
       <Header />
-      <div className="flex-1 w-full overflow-hidden">
+      <div className="pt-20 h-screen">
         <iframe 
           src="https://apopular.egestor.com.br/vitrine/" 
           className="w-full h-full border-none"
