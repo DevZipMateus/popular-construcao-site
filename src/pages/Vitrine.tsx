@@ -6,8 +6,8 @@ const Vitrine = () => {
 
   useEffect(() => {
     const calculateHeight = () => {
-      // Altura total - header (80px) - badge inferior (63px)
-      const height = window.innerHeight - 80 - 63;
+      // Altura total - header (80px)
+      const height = window.innerHeight - 80;
       setIframeHeight(height);
     };
 
