@@ -43,6 +43,14 @@ const Hero = () => {
             <Button 
               size="lg"
               variant="outline"
+              onClick={() => window.location.href = "/vitrine"}
+              className="w-full sm:w-auto bg-white/10 text-primary-foreground border-white/40 hover:bg-white/20 hover:border-white/60 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
+            >
+              Ver Vitrine Online
+            </Button>
+            <Button 
+              size="lg"
+              variant="outline"
               onClick={() => {
                 const element = document.getElementById("servicos");
                 if (element) {
