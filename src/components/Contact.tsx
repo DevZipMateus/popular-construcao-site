@@ -129,7 +129,7 @@ const Contact = () => {
           <div className="text-center pt-6 sm:pt-8 px-4 sm:px-0">
             <Button 
               size="lg"
-              onClick={() => window.open("https://wa.me/5513933583248", "_blank")}
+              onClick={() => window.open("https://wa.me/551333583248", "_blank")}
               className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all text-base sm:text-lg px-8 sm:px-12 py-5 sm:py-6"
             >
               Faça seu Orçamento pelo WhatsApp
