@@ -74,7 +74,7 @@ const Header = () => {
               Vitrine
             </Button>
             <Button 
-              onClick={() => window.open("https://wa.me/5513933583248", "_blank")}
+              onClick={() => window.open("https://wa.me/551333583248", "_blank")}
               className="ml-4 bg-white text-header hover:bg-white/90"
             >
               Fale Conosco
@@ -111,7 +111,7 @@ const Header = () => {
               Vitrine
             </Button>
             <Button 
-              onClick={() => window.open("https://wa.me/5513933583248", "_blank")}
+              onClick={() => window.open("https://wa.me/551333583248", "_blank")}
               className="w-full bg-white text-header hover:bg-white/90"
             >
               Fale Conosco
